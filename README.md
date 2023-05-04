@@ -18,7 +18,7 @@
 2. 反向传播误差，计算损失函数关于每个权重的梯度。
 3. 更新权重，使用梯度下降或其他优化算法来调整权重。
 
-![image](https://user-images.githubusercontent.com/57136426/236192631-569bcc73-4f2c-4169-a879-31b926b258b1.png, width="30%")
+![image](https://user-images.githubusercontent.com/57136426/236192631-569bcc73-4f2c-4169-a879-31b926b258b1.png){:height="30%" width="30%"}
 ![image](https://user-images.githubusercontent.com/57136426/236192696-7bcedae3-2551-400c-863a-0a901f899553.png)
 ![image](https://user-images.githubusercontent.com/57136426/236192722-c47ce53a-bed7-48d6-af87-be60230d759f.png)
 ![image](https://user-images.githubusercontent.com/57136426/236192755-198e2836-b929-494f-925a-42d460c28aa3.png)
