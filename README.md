@@ -62,3 +62,54 @@ class NeuralNetwork:
                 loss = mse_loss(y, self.forward(X))
                 print(f'Epoch {epoch}, Loss: {loss}')
 
+
+## 4. 使用PyTorch实现三层神经网络
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+class NeuralNetwork(nn.Module):
+    def __init__(self, input_nodes, hidden_nodes, output_nodes):
+        super(NeuralNetwork, self).__init__()
+        
+        self.layer1 = nn.Linear(input_nodes, hidden_nodes)
+        self.layer2 = nn.Linear(hidden_nodes, output_nodes)
+        self.activation = nn.Sigmoid()
+
+    def forward(self, X):
+        hidden = self.activation(self.layer1(X))
+        output = self.activation(self.layer
+2(X))
+        return output
+
+def mse_loss(y_true, y_pred):
+    return torch.mean((y_true - y_pred) ** 2)
+
+input_nodes = 2
+hidden_nodes = 4
+output_nodes = 1
+
+neural_network = NeuralNetwork(input_nodes, hidden_nodes, output_nodes)
+optimizer = optim.SGD(neural_network.parameters(), lr=0.1)
+
+X = torch.tensor([[0, 0], [0, 1], [1, 0], [1, 1]], dtype=torch.float32)
+y = torch.tensor([[0], [1], [1], [0]], dtype=torch.float32)
+
+epochs = 10000
+
+for epoch in range(epochs):
+    output = neural_network(X)
+    loss = mse_loss(y, output)
+    
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+    
+    if epoch % 1000 == 0:
+        print(f'Epoch {epoch}, Loss: {loss.item()}')
+
+print("Training finished.")
+
+
+
