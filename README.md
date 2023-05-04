@@ -61,7 +61,7 @@ class NeuralNetwork:
             if epoch % 1000 == 0:
                 loss = mse_loss(y, self.forward(X))
                 print(f'Epoch {epoch}, Loss: {loss}')
-
+```
 
 ## 4. 使用PyTorch实现三层神经网络
 ```python
@@ -110,6 +110,6 @@ for epoch in range(epochs):
         print(f'Epoch {epoch}, Loss: {loss.item()}')
 
 print("Training finished.")
-
+```
 
 
