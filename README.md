@@ -19,9 +19,7 @@
 3. 更新权重，使用梯度下降或其他优化算法来调整权重。
 
 <center class="half">
-<img src="https://user-images.githubusercontent.com/57136426/236192631-569bcc73-4f2c-4169-a879-31b926b258b1.png" width="200px">
-<img src="https://user-images.githubusercontent.com/57136426/236192696-7bcedae3-2551-400c-863a-0a901f899553.png" width="200px">
-<img src="https://user-images.githubusercontent.com/57136426/236192722-c47ce53a-bed7-48d6-af87-be60230d759f.png" width="200px">
+<img src="https://user-images.githubusercontent.com/57136426/236192631-569bcc73-4f2c-4169-a879-31b926b258b1.png" width="200px"><img src="https://user-images.githubusercontent.com/57136426/236192696-7bcedae3-2551-400c-863a-0a901f899553.png" width="200px"><img src="https://user-images.githubusercontent.com/57136426/236192722-c47ce53a-bed7-48d6-af87-be60230d759f.png" width="200px">
 </center>
 <img src="https://user-images.githubusercontent.com/57136426/236192755-198e2836-b929-494f-925a-42d460c28aa3.png" width="200px">
 <img src="https://user-images.githubusercontent.com/57136426/236192779-93ecc580-8f0e-4646-90ec-58d214bff56a.png" width="200px">
